@@ -2,7 +2,7 @@
 //
 // @name           DanbooruAutoFullsize
 // @author         ImoutoChan
-// @version        2.0
+// @version        2.1
 // @description    Auto load fullsize image
 //
 // @include        https://danbooru.donmai.us/posts/*
