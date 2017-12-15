@@ -25,7 +25,7 @@ function log(logtext) {
 function autoFullsize()
 {
     if (document.querySelector(".imoutoExtHide") !== null || document.querySelector(".imoutoExtRelativeHide") !== null ||  document.querySelector(".notice-child") !== null) {
-        log("saved or have relatives");
+        log("saved or have parent");
         return;
     }
 
