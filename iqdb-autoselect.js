@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         IqdbAutoselect
-// @version      1.0
+// @version      1.1
 // @description  Auto select source site when found
 // @author       ImoutoChan
 // @include      https://iqdb.org/*
@@ -72,7 +72,7 @@ function autoselect() {
             .toLowerCase();
 
         foundEntry = {
-            link: current.querySelector("tr > td > a").getAttribute("href").replace(/^\/+/g, ''),
+            link: current.querySelector("tr > td > a").getAttribute("href"),
             source: source,
             similarity: current.querySelector("tr:nth-child(5) > td").innerHTML,
             priority: getPriority(source)
