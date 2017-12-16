@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         IqdbAutoselect
-// @version      1.1
+// @version      1.2
 // @description  Auto select source site when found
 // @author       ImoutoChan
 // @include      https://iqdb.org/*
@@ -10,9 +10,9 @@
 
 function ready() {
   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-    autoselect();
+    autoselectDelay();
   } else {
-    document.addEventListener('DOMContentLoaded', autoselect);
+    document.addEventListener('DOMContentLoaded', autoselectDelay);
   }
 }
 
@@ -46,8 +46,15 @@ function getPriority(source) {
     }
 }
 
+function autoselectDelay()
+{
+    setTimeout(function() {
+        autoselect();
+    }, 5000);
+}
+
 function autoselect() {
-    if (document.querySelector(".imoutoExtHide") !== null || document.querySelector(".imoutoExtRelativeHide") !== null) {
+    if (document.querySelector("#pages .imoutoExtHide") !== null || document.querySelector("#pages .imoutoExtRelativeHide") !== null) {
         log("saved or have relatives");
         return;
     }
@@ -91,7 +98,7 @@ function autoselect() {
 
     setTimeout(function() {
         window.location = foundEntries[0].link;
-    }, 5000);
+    }, 0);
 }
 
 ready();
