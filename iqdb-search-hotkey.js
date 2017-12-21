@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         IqdbSearchHotKey
-// @version      1.2
+// @version      1.3
 // @description  Move mouse over image and press ctrl+q
 // @author       ImoutoChan
 //
@@ -32,7 +32,7 @@
 
     rebind();
 
-    document.onkeydown = function(e) {
+    document.addEventListener("keydown", function(e) {
         if (e.ctrlKey && (String.fromCharCode(e.which) === 'q' || String.fromCharCode(e.which) === 'Q')) {
             var res = hoverElem.outerHTML.match(/https?:\/\/[^\/\s]+\/\S+\.(jpg|png|gif|jpeg|bmp)/i);
             if (res !== null) {
@@ -40,5 +40,5 @@
                 GM_openInTab("http://iqdb.org/?url=" + encodeURIComponent(urlString), true);
             }
         }
-    };
+    });
 })();
