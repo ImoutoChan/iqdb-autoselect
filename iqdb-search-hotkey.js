@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         IqdbSearchHotKey
-// @version      1.1
+// @version      1.2
 // @description  Move mouse over image and press ctrl+q
 // @author       ImoutoChan
 //
 // @match        *://*/*
 //
 // @grant        GM.openInTab
+// @grant        GM_openInTab
 // ==/UserScript==
 
 (function() {
@@ -36,7 +37,7 @@
             var res = hoverElem.outerHTML.match(/https?:\/\/[^\/\s]+\/\S+\.(jpg|png|gif|jpeg|bmp)/i);
             if (res !== null) {
                 var urlString = res[0];
-                GM.openInTab("http://iqdb.org/?url=" + encodeURIComponent(urlString));
+                GM_openInTab("http://iqdb.org/?url=" + encodeURIComponent(urlString), true);
             }
         }
     };
