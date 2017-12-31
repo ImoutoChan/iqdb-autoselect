@@ -2,7 +2,7 @@
 //
 // @name           DanbooruAutoFullsize
 // @author         ImoutoChan
-// @version        2.1
+// @version        2.2
 // @description    Auto load fullsize image
 //
 // @include        https://danbooru.donmai.us/posts/*
@@ -29,7 +29,7 @@ function autoFullsize()
         return;
     }
 
-    var regex = document.body.innerHTML.match(/\/data\/[0-9a-f]{32}\.[a-z]*/ig);
+    var regex = document.body.innerHTML.match(/[^"'\s]*\/data\/[0-9a-f]{32}\.[a-z0-9]*/ig);
     var link = "https://danbooru.donmai.us" + regex[0];
 
     setTimeout(function() {
