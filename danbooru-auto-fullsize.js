@@ -2,7 +2,7 @@
 //
 // @name           DanbooruAutoFullsize
 // @author         ImoutoChan
-// @version        2.3
+// @version        2.4
 // @description    Auto load fullsize image
 //
 // @include        https://danbooru.donmai.us/posts/*
@@ -24,7 +24,9 @@ function log(logtext) {
 
 function autoFullsize()
 {
-    if (document.querySelector(".imoutoExtHide") !== null || document.querySelector(".imoutoExtRelativeHide") !== null ||  document.querySelector(".notice-child") !== null) {
+    if (document.querySelector(".imoutoExtHide") !== null
+        || document.querySelector(".imoutoExtRelativeHide") !== null
+        || document.querySelector(".post-notice-child") !== null) {
         log("saved or has parent");
         return;
     }
