@@ -2,7 +2,7 @@
 //
 // @name           DanbooruAutoFullsize
 // @author         ImoutoChan
-// @version        2.4
+// @version        2.5
 // @description    Auto load fullsize image
 //
 // @include        https://danbooru.donmai.us/posts/*
@@ -31,7 +31,7 @@ function autoFullsize()
         return;
     }
 
-    var regex = document.body.innerHTML.match(/[^"'\s]*\/data\/[0-9a-f]{32}\.[a-z0-9]*/ig);
+    var regex = document.body.innerHTML.match(/[^"'\s]*\/(data|original)(\/[0-9a-f]{2}\/[0-9a-f]{2}){0,1}\/[0-9a-f]{32}\.[a-z0-9]*/ig);
     var link = regex[0];
 
     if (link.startsWith('/')) {
