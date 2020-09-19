@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Danbooru Open All Posts
-// @version      1.0
+// @version      1.1
 // @description  Add a button to open all posts in tabs
 // @author       ImoutoChan
 // @match        https://danbooru.donmai.us/posts?*
@@ -28,11 +28,13 @@
 
 
     const newButton = document.querySelector('#subnav-help').cloneNode(true);
-    newButton.childNodes[0].innerHTML = 'Open All';
-    newButton.childNodes[0].setAttribute("href", "#");
-    newButton.childNodes[0].onclick = openAll;
     newButton.style.float = 'right';
-    newButton.childNodes[0].style.color = 'deeppink';
+
+    const newAnchor = newButton.childNodes[0];
+    newAnchor.innerHTML = 'Open All';
+    newAnchor.setAttribute("href", "#");
+    newAnchor.onclick = openAll;
+    newAnchor.style.color = 'deeppink';
 
     const menu = document.querySelector("#subnav-menu");
     menu.appendChild(newButton);
