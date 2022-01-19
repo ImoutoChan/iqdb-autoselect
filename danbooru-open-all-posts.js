@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Danbooru Open All Posts
-// @version      1.1
+// @version      1.2
 // @description  Add a button to open all posts in tabs
 // @author       ImoutoChan
 // @match        https://danbooru.donmai.us/posts?*
@@ -11,7 +11,7 @@
     'use strict';
 
     const openAll = async () => {
-        const imgs = [...document.querySelectorAll("article.post-preview > a")].map(x => x.getAttribute('href'));
+        const imgs = [...document.querySelectorAll("a.post-preview-link")].map(x => x.getAttribute('href'));
 
         let i = 0;
         for (const img of imgs) {
