@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Iqdb Autoselect
-// @version      1.3
+// @version      1.4
 // @description  Auto select best match when found
 // @author       ImoutoChan
 // @match        https://iqdb.org/*
@@ -111,7 +111,7 @@ function autoselect() {
     }
 
     setTimeout(function () {
-        //window.location = foundEntries[0].link;
+        window.location = foundEntries[0].link;
     }, 1);
 }
 
