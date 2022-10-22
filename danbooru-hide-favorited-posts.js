@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         Danbooru Hide Saved
-// @version      1.0
+// @name         Danbooru Hide Favs
+// @version      1.1
 // @description  Add a button to hide faved images
 // @author       ImoutoChan
 // @match        https://danbooru.donmai.us/posts?*
@@ -27,5 +27,5 @@
         menu.appendChild(newButton);
     };
 
-    appendButton('Hide Fav');
+    appendButton('Hide Favs');
 })();
