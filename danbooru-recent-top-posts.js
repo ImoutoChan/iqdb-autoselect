@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name         Danbooru Recent Posts
-// @version      1.0
+// @version      1.3
 // @description  Add a button to view recent most liked posts for current search
 // @author       ImoutoChan
-// @match        https://danbooru.donmai.us/posts?*
+// @match        https://danbooru.donmai.us/posts*
+// @downloadURL  https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-recent-top-posts.js
+// @updateURL    https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-recent-top-posts.js
+// @license      MIT
 // ==/UserScript==
 
 (async function() {
@@ -22,7 +25,7 @@
     };
 
     const appendButton = (caption, tags) => {
-        const newButton = document.querySelector('#subnav-help').cloneNode(true);
+        const newButton = document.querySelector("#subnav-menu li:last-child").cloneNode(true);
         newButton.style.float = 'right';
 
         const newAnchor = newButton.childNodes[0];

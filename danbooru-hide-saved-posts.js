@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name         Danbooru Hide Saved
-// @version      1.2
+// @version      1.3
 // @description  Add a button to hide faved images
 // @author       ImoutoChan
-// @match        https://danbooru.donmai.us/posts?*
+// @match        https://danbooru.donmai.us/posts*
+// @downloadURL  https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-hide-saved-posts.js
+// @updateURL    https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-hide-saved-posts.js
+// @license      MIT
 // ==/UserScript==
 
 (async function() {
@@ -34,7 +37,7 @@
     };
 
     const appendButton = (caption, func) => {
-        const newButton = document.querySelector('#subnav-help').cloneNode(true);
+        const newButton = document.querySelector("#subnav-menu li:last-child").cloneNode(true);
         newButton.style.float = 'right';
 
         const newAnchor = newButton.childNodes[0];
