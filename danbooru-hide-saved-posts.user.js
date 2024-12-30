@@ -4,8 +4,8 @@
 // @description  Add a button to hide faved images
 // @author       ImoutoChan
 // @match        https://danbooru.donmai.us/posts*
-// @downloadURL  https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-hide-saved-posts.js
-// @updateURL    https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-hide-saved-posts.js
+// @downloadURL  https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-hide-saved-posts.user.js
+// @updateURL    https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-hide-saved-posts.user.js
 // @license      MIT
 // ==/UserScript==
 

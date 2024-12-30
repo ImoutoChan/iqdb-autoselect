@@ -4,8 +4,8 @@
 // @description  Add a button to view recent most liked posts for current search
 // @author       ImoutoChan
 // @match        https://danbooru.donmai.us/posts*
-// @downloadURL  https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-recent-top-posts.js
-// @updateURL    https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-recent-top-posts.js
+// @downloadURL  https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-recent-top-posts.user.js
+// @updateURL    https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-recent-top-posts.user.js
 // @license      MIT
 // ==/UserScript==
 

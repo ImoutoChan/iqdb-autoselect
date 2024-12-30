@@ -4,8 +4,8 @@
 // @description  Add a button to open all posts in tabs
 // @author       ImoutoChan
 // @match        https://danbooru.donmai.us/posts*
-// @downloadURL  https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-open-all-posts.js
-// @updateURL    https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-open-all-posts.js
+// @downloadURL  https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-open-all-posts.user.js
+// @updateURL    https://github.com/ImoutoChan/iqdb-autoselect/raw/master/danbooru-open-all-posts.user.js
 // @license      MIT
 // @grant        GM_openInTab
 // ==/UserScript==
